@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+/* User Menu */
+.userMenu{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    color: #444444;
+}
+#logo{
+    width: 80%;
+    margin-left: 10%;
+}
+.userMenu ul{
+    width: 1050px;
+    display: flex;
+    margin-right: 10%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #eeeeee;
+}
+.userMenu li{
+    list-style: none;
+    display: flex;
+    padding-left: 5%;
+    padding-top: 20px;
+}
+.userMenu i{
+    padding-right: 5px;
+}
+.userMenu p{
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+/* End user menu */
+
+/* navegation */
+
+.navigation ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rubik', sans-serif;
+    font-size: small;
+    font-weight: 600;
+}
+
+.navigation li{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding-left: 30px;
+    padding-top: 50px;
+    justify-content: center;
+    transition: 1s;
+}
+.navigation li:hover {
+    color: #4300d2;
+    transform: scale(1.2,1.2);
+}
+.navigation li:active{
+    color: #270570;
+}
+.navigation i{
+    padding-right: 10px;
+}
+.navigation p{
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------Box search ticket ---------- */
+
+.box-search-ticket{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* -------- inside box ------------ */
+
+.inside-box{
+    width: 80%;
+    height: 260px;
+    background-color: #270570;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.inside-box table{
+    color: #ffffff;
+}
+.inside-box input{
+    width: 10px;
+}
+
+.travel-information{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #270570;
+}
+#origin-destiny{
+    width: 100%;
+    height: 60px;
+    color: #444444;
+    background-color: #ffffff;
+    display: flex;
+    border-radius: 10px;
+}
+#origin-destiny h6{
+    font-size: medium;
+}
+#origin-destiny input{
+    width: 49%;
+    border-radius: 10px;
+}
+.travel-date{
+   background-color: #ffffff;
+   border-radius: 10px;
+}
+.travel-date h5{
+    text-align: center;
+}
+.travel-date input{
+    width: 45%;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 3%;
+    padding-left: 30px;
+    color: #444444;
+}
+
+.travel-date input[type=checkbox] {
+    width: 10px;
+}
+
+.travel-date input[type=number] {
+    width: 20%;
+}
+
+/* corossel de fotos */
+#container img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    margin-left:100%;
+    border-radius: 20px;
+
+    -webkit-transition: margin-left 500ms ease-in;
+    -moz-transition: margin-left 500ms ease-in;
+    -o-transition: margin-left 500ms ease-in;
+    transition: margin-left 500ms ease-in;
+}
+#container{
+    overflow:hidden;
+    position: relative;
+    width:550px;
+    height:300px;
+    margin: 5%;
+    border-radius: 20px;
+}
+.ativa{
+    margin-left:0%;
+}
+
+

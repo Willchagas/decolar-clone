@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/35178af9c4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="userMenu">
+        <div id="logo"><img src="img/logo.png" width="148px"></div>
+                <ul>
+                    <li><i class="fa-solid fa-passport"></i><p>Passaporte</p></li>
+                    <li><i class="fa-solid fa-user"></i><p>Iniciar Sessão</p></li>
+                    <li><i class="fa-solid fa-plane-departure"></i><p>Minhas Viagens</p></li>
+                    <li><i class="fa-solid fa-circle-info"></i><p>Ajuda</p></li>
+                </ul>
+    </header>
+    <header class="navigation">
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-bed"></i><p>Hospedagens</p></li>
+            <li><i class="fa-solid fa-person-walking-luggage"></i><p>Passagens</p></li>
+            <li><i class="fa-solid fa-suitcase"></i><p>Pacotes</p></li>
+            <li><i class="fa-brands fa-gripfire"></i><p>Ofertas</p></li>
+            <li><i class="fa-solid fa-house"></i><p>Aluguéis</p></li>
+            <li><i class="fa-solid fa-ticket"></i><p>Passeios</p></li>
+            <li><i class="fa-solid fa-car-side"></i><p>Carros</p></li>
+            <li><i class="fa-solid fa-shield-heart"></i><p>Seguros</p></li>
+        </ul>
+    </nav>
+    </header>
+    <div class="box-search-ticket" style="background-image: url(img/background.png);">
+        <div class="inside-box">
+            
+                <table cellspacing="20">
+                    <tr>
+                        <td><h3>Passagens aéreas</h3></td>
+                        <td><input type="radio" value=""> Ida e Volta</td>
+                        <td><input type="radio" value=""> Só ida</td>
+                    </tr>
+                </table>
+                <table class="travel-information" cellspacing="20">
+                    <tr>
+                        <td width="33%">
+                            <div id="origin-destiny">
+                                <h6>Origem</h6>
+                                <input type="text" placeholder="Insira a cidade de partida">
+                                <h6>Destino</h6>
+                                <input type="text" placeholder="Insira a cidade destino" name="">
+                            </div>
+                        </td>
+                        <td class="travel-date" width="33%">
+                            <h5 style="color: #444444; font-size: medium;">Selecione as datas</h5>
+                            <input type="date" placeholder="chegafas">
+                            <input type="date">                        
+                        </td>
+                        <td class="travel-date" width="33%">
+                            <h5 style="color: #444444; font-size: medium;">Passageiros e classe</h5>
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </table>
+        </div>
+    </div>
+    <div>
+    <h2>Top destinos mais buscados hoje no Brasil</h2>
+        <div id="container">
+            <img src="img/curitiba.jpg" class="ativa">
+            <img src="img/pato branco.jpg">
+            <img src="img/rio.jpg">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

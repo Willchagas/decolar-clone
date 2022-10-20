@@ -28,59 +28,178 @@
             <li><i class="fa-solid fa-person-walking-luggage"></i><p>Passagens</p></li>
             <li><i class="fa-solid fa-suitcase"></i><p>Pacotes</p></li>
             <li><i class="fa-brands fa-gripfire"></i><p>Ofertas</p></li>
-            <li><i class="fa-solid fa-house"></i><p>Aluguéis</p></li>
             <li><i class="fa-solid fa-ticket"></i><p>Passeios</p></li>
-            <li><i class="fa-solid fa-car-side"></i><p>Carros</p></li>
             <li><i class="fa-solid fa-shield-heart"></i><p>Seguros</p></li>
         </ul>
     </nav>
     </header>
     <div class="box-search-ticket" style="background-image: url(img/background.png);">
         <div class="inside-box">
-            
-                <table cellspacing="20">
-                    <tr>
-                        <td><h3>Passagens aéreas</h3></td>
-                        <td><input type="radio" value=""> Ida e Volta</td>
-                        <td><input type="radio" value=""> Só ida</td>
-                    </tr>
-                </table>
-                <table class="travel-information" cellspacing="20">
-                    <tr>
-                        <td width="33%">
-                            <div id="origin-destiny">
-                                <h6>Origem</h6>
-                                <input type="text" placeholder="Insira a cidade de partida">
-                                <h6>Destino</h6>
-                                <input type="text" placeholder="Insira a cidade destino" name="">
-                            </div>
-                        </td>
-                        <td class="travel-date" width="33%">
-                            <h5 style="color: #444444; font-size: medium;">Selecione as datas</h5>
-                            <input type="date" placeholder="chegafas">
-                            <input type="date">                        
-                        </td>
-                        <td class="travel-date" width="33%">
-                            <h5 style="color: #444444; font-size: medium;">Passageiros e classe</h5>
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-
-                    </tr>
-                </table>
+            <div class="ticket-type">
+                <h1>Passagens aéreas</h1>
+                    <label class="check">
+                        <input type="checkbox">Ida e volta</input>
+                        <span></span>
+                    </label>
+                    <label class="check">
+                        <input type="checkbox">Ida</input>
+                        <span></span>
+                    </label>
+            </div>
+            <div class="info-passagem">
+                <div>
+                    <h5>Escolha a cidade de origem</h5>
+                    <select name="CidadeOrigem"  id="">    
+                        <option value="saoPaulo">São Paulo</option>
+                        <option value="patoBranco">Pato Branco</option>
+                        <option value="rioDeJaneiro">Rio de Janeiro</option>
+                        <option value="curitiba">Curitiba</option>
+                    </select>
+                </div>                
+                <div>
+                    <h5>Escolha a cidade de destino</h5>
+                    <select name="CidadeDestino"  id="">    
+                        <option value="saoPaulo">São Paulo</option>
+                        <option value="patoBranco">Pato Branco</option>
+                        <option value="rioDeJaneiro">Rio de Janeiro</option>
+                        <option value="curitiba">Curitiba</option>
+                    </select>
+                </div>
+                <div>
+                    <h5>Escolha a data de ida</h5>
+                    <input type="date">
+                    <h5>Escolha a data de volta</h5>
+                    <input type="date">
+                </div>
+                <div>
+                    <h5>Passageiros e classe</h5>
+                    <Select>
+                        <optgroup label="Economica">
+                            <option value="">1 passagem economica</option>
+                            <option value="">2 passagens economica</option>
+                            <option value="">3 passagens economica</option>
+                        </optgroup>
+                        <optgroup label="Primeira classe">
+                            <option value="">1 passagem primeira classe</option>
+                            <option value="">2 passagens primeira classe</option>
+                            <option value="">3 passagens primeira classe</option>
+                        </optgroup>
+                    </Select>
+                </div>
+                <div>
+                    <button>Buscar</button>
+                </div>
+            </div>
         </div>
     </div>
-    <div>
+    <div class="slide">
     <h2>Top destinos mais buscados hoje no Brasil</h2>
-        <div id="container">
-            <img src="img/curitiba.jpg" class="ativa">
-            <img src="img/pato branco.jpg">
-            <img src="img/rio.jpg">
+        <div id="container">            
+            <img src="img/curitiba.jpg" class="ativa">            
+            <img src="img/patobranco.jpg">            
+            <img src="img/riodejaneiro.jpg">           
+        </div>
+        <div id="container2">
+            <h2>Ofertas que não podem esperar</h2>
+            <div><p>Se você ainda não definiu o seu destino, talvez te interesse ver a nossa seção de ofertas.</p><button>Ver mais</button></div>
+            <img src="img/mulherComNot.jpg">
         </div>
     </div>
+    <section class="ofertas">
+        <div class="banner-de-ofertas">
+            <img src="img/bannerleft.png" height="250px">
+            <img src="img/bannercenter.png" height="250px">
+            <img src="img/bannerRight.png" height="250px">
+        </div>
+    </section>
+
+    <section class="copa-do-mundo">
+        <div class="box">
+            <img src="img/promoCopa.png" width="400px">
+
+            <div class="info">
+              <h1>Com o Cartão Decolar Santander Visa <br>
+                  <span style="color: red;"> você concorre a 600mil pontos toda <br> semana.</span></h1><br>
+                  <h3>Veja a <span style="color: black;"> Copa do Mundo FIFA 2022ᵀᴹ</span> de onde quiser.</h3><br><br>
+                
+                <div class="benefits">
+                    <p>
+                        <i class="fa-solid fa-earth-americas fa-2x"></i><br>
+                        Você ganha pontos <br> Passaporte Decolar por todas <br> as suas compras.</p>
+
+                    <p>
+                        <i class="fa-regular fa-clock fa-2x"></i><br>
+                        6x mais chances de ganhar <br> com o Cartão Decolar <br> Santander Visa.</p>
+
+                    <p>
+                        <i class="fa-solid fa-plane-departure fa-2x"></i><br>
+                        e continue acumulando as <br> milhas das companhias <br> aéreas.</p>
+                </div>
+                <button>Peça já o seu!</button>
+            </div>  
+            <p style="font-size: 10px; padding: 10px; text-align: center;">Consulte condições, períodos de participação, descrição dos Prêmios e limites de despesas dos pacotes, no Regulamento. Para mais informações, dúvidas ou consultar certificado SEAE/ME, acesse o Regulamento em visa.com.br/decoleparaocatar.</p>               
+        </div>
+    </section>
+
+    <section class="receberOfertas">
+        <h2>Receba ofertas dos melhores destinos</h2>
+        <div>           
+            <img src="img/baixarApp.png" width="45%" alt="">
+            <img src="img/inscrever.png" width="45%" alt="">
+        </div>
+    </section>
+    <div style="width: 100%; background-color: #eeeeee;"><h2 style="text-align: center; margin-top: 5%;">Compre tudo para a sua viagem na Decolar</h2></div>
+    <section class="infos-uteis">
+       
+        <div>
+            <h3>Como comprar na Decolar?</h3>
+            <p>                    
+                Na Decolar você pode comprar tudo o que precisa para as suas férias. Primeiro, insira a informação da sua viagem no buscador. Compare entre centenas de opções e escolha a que melhor se adapta aos seus planos, clicando em Comprar. Cadastre os dados dos passageiros, selecione o meio de pagamento e insira demais informações necessárias. Aproveite as ofertas e promoções da Decolar! Por último, clique novamente em Comprar e receba os vouchers no seu e-mail para começar a desfrutar da sua viagem.
+            </p>
+        </div>
+        
+        <div>
+            <h3>Documentação necessária para comprar e viajar</h3>
+            <p>
+                    
+                Para comprar a sua viagem na Decolar, você deve ter os números dos documentos de identidade, os nomes, os sobrenomes e as datas de nascimento dos passageiros. Antes de viajar, revise o detalhe da sua reserva em Minha Conta e saiba quais são os vistos e vacinas obrigatórios no país de destino. Isso inclui as escalas nas viagens de avião e os tours que você realizar durante a sua viagem. Se uma criança precisar viajar sozinha ou acompanhada, deverá contar com uma autorização especial para sair do país.
+            </p>
+        </div>
+
+        <div>
+            <h3>É possível alterar ou cancelar uma compra?</h3>
+            <p>
+                    
+                Na Decolar você pode fazer a alteração ou o cancelamento de uma reserva, mas leve em consideração que alguns provedores ou tarifas não permitem ou cobram um custo adicional para isso. Em voos, hotéis e carros, você só pode fazer alterações no mesmo provedor. Você também pode cancelar uma reserva para todos ou para alguns dos passageiros. O que você não pode fazer é alterar o titular da reserva. Lembre-se de revisar as políticas de alteração e cancelamento da sua reserva em Minha Conta.
+            </p>
+        </div>
+
+        <div>
+            <h3>Por que devo escolher a Decolar para a minha viagem?</h3>
+            <p>           
+                A Decolar é uma das agências de viagens online com maior trajetória na América Latina e recomendada por milhares de viajantes. Aproveite as ofertas e promoções no nosso site e conheça o mundo todo. Compre sua viagem na Decolar através da web ou da app. Se você tem alguma dúvida ou quer mudar algo sobre a sua viagem, você pode fazê-lo em Minhas Viagens. Viaje com a confiança de que você pode contar conosco para o que precisar.
+            </p> 
+        </div>
+    </section>
+
+    <footer>
+        <div class="inscreva-se">
+            <div style="width: 20%;">
+                <img src="img/envelope.png" alt="">
+            </div>
+            <div style="width: 30%;">
+                <p>
+                    <h3>Inscreva-se para receber ofertas exclusivas</h3><br>
+                    Receba em primeira mão nossas ofertas e benefícios exclusivos.
+                </p>
+            </div>
+            <div style="width: 40%;">
+                <input type="email" name="email" id="email" size="45px" placeholder="Insira seu email">
+                <input type="submit" value="Quero recebê-las"/>
+            </div>
+        </div>
+        <div style="text-align: center; width: 100%; height: 90px; background-color: #eeeeee; padding: 30px;"><h4>Feito com ❤ por Willian P. Chagas</h4></div>
+    </footer>   
 
     <script src="js/script.js"></script>
 </body>

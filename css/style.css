@@ -4,10 +4,10 @@
     border: 0;
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
 }
 /* User Menu */
 .userMenu{
-    width: 100%;
     height: 48px;
     display: flex;
     font-family: 'Rubik', sans-serif;
@@ -18,8 +18,9 @@
     margin-left: 10%;
 }
 .userMenu ul{
-    width: 1050px;
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
     margin-right: 10%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -28,8 +29,8 @@
 .userMenu li{
     list-style: none;
     display: flex;
-    padding-left: 5%;
-    padding-top: 20px;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 .userMenu i{
     padding-right: 5px;
@@ -46,7 +47,7 @@
 .navigation ul{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
     font-family: 'Rubik', sans-serif;
     font-size: small;
     font-weight: 600;
@@ -54,16 +55,16 @@
 
 .navigation li{
     width: 100%;
-    display: flex;
     list-style: none;
     padding-left: 30px;
     padding-top: 50px;
-    justify-content: center;
     transition: 1s;
+    display: flex;
+    justify-content: center;
 }
 .navigation li:hover {
     color: #4300d2;
-    transform: scale(1.2,1.2);
+    font-size: medium;
 }
 .navigation li:active{
     color: #270570;
@@ -98,65 +99,94 @@
     background-color: #270570;
     margin: 0 auto;
     border-radius: 10px;
-}
-.inside-box table{
     color: #ffffff;
 }
-.inside-box input{
-    width: 10px;
+
+.ticket-type{
+    display: flex;
+    padding-left: 5%;
+    padding-top: 15px;
+}
+.ticket-type input[type=checkbox]{
+    margin-left: 5%;
 }
 
-.travel-information{
-    width: 90%;
-    margin: 0 auto;
+/*  input checkbox */
+.check{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.check input {
+    display: none;
+}
+
+.check span {
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-color: #fff;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.check input:checked + span {
+    padding: 1px;
     background-color: #270570;
 }
-#origin-destiny{
+
+/* informações da passagem */
+
+.info-passagem{
     width: 100%;
-    height: 60px;
-    color: #444444;
-    background-color: #ffffff;
     display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.info-passagem select{
+    padding: 10px;
     border-radius: 10px;
 }
-#origin-destiny h6{
+.info-passagem input{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+.info-passagem h5{
+    margin-bottom: 10px;
+}
+.info-passagem button{
+    width: 100px;
+    height: 50px;
     font-size: medium;
-}
-#origin-destiny input{
-    width: 49%;
-    border-radius: 10px;
-}
-.travel-date{
-   background-color: #ffffff;
-   border-radius: 10px;
-}
-.travel-date h5{
-    text-align: center;
-}
-.travel-date input{
-    width: 45%;
-    height: 40px;
-    border-radius: 10px;
-    margin-left: 3%;
-    padding-left: 30px;
-    color: #444444;
-}
-
-.travel-date input[type=checkbox] {
-    width: 10px;
-}
-
-.travel-date input[type=number] {
-    width: 20%;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #fa503f;
+    border-radius: 30px;
+    margin-top: 5%;
 }
 
 /* corossel de fotos */
+
+.slide{
+    display: flex;
+    width: 90%;
+    height: 500px;
+    margin-left: 50px;
+}
+.slide h2{
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 110px;
+}
 #container img{
     position:absolute;
     width:100%;
     height:100%;
     margin-left:100%;
     border-radius: 20px;
+    object-fit: fill;
 
     -webkit-transition: margin-left 500ms ease-in;
     -moz-transition: margin-left 500ms ease-in;
@@ -165,14 +195,228 @@
 }
 #container{
     overflow:hidden;
-    position: relative;
-    width:550px;
-    height:300px;
+    position: absolute;
+    width: 40%;
+    height: 330px;
     margin: 5%;
     border-radius: 20px;
 }
 .ativa{
     margin-left:0%;
 }
+
+#container2{
+    width: 650px;
+}
+#container2 h2{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#container2 div{
+    position: absolute;
+    width: 550px;
+    height: 60px;
+    background-color: white;
+    z-index: 1000;
+    margin-left: 100px;
+    margin-top: 240px;
+    display: flex;
+
+    box-shadow:         0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+}
+#container2 img{
+    position: relative;
+    object-fit: cover;
+    width: 79%;
+    margin-left: 20%;
+    border-radius: 10px;
+    
+    box-shadow:         0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+}
+
+#container2 div p{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#container2 button{
+    width: 70px;
+    height: 30px;
+    float: right;
+    margin: 0 auto;
+    margin-top: 15px;
+    color: #ffffff;
+    background-color: #270570;
+    border-radius: 20px;
+}
+
+/* banner de oferta */
+
+.ofertas{
+    width: 100%;
+    background-color: #eeeeee;
+}
+.banner-de-ofertas{
+    width: 90%;
+    display: flex-box;
+    margin: 0 auto;
+
+}
+.banner-de-ofertas img{
+    margin: 28px;
+    border-radius: 15px;
+    border: 2px solid;
+    border-color: #ffffff;
+}
+
+/* -------------------- */
+
+.copa-do-mundo{
+    width: 100%;
+    height: 550px;
+    background-color: #eeeeee;
+}
+.box{
+    width: 90%;
+    height: 510px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    overflow: visible;
+}
+.info{
+    width: 65%;
+    background-color: #ffffff;
+    color: #2e2e2e;
+    padding: 40px;
+}
+.info h1{
+    font-size: xx-large;
+}
+
+.benefits{
+    display: flex;
+}
+.benefits p{
+    width: 30%;
+    height: 135px;
+    border: 1px solid;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #eeeeee;
+}
+.info button{
+    width: 20%;
+    height: 50px;
+    font-size: medium;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #412480;
+    border-radius: 30px;
+    margin-top: 5%;
+}
+.info button:hover{
+    background-color: #270570;
+}
+.box img{
+    float: right;
+}
+
+/* sessão baixar app */
+
+.receberOfertas{
+    width: 100%;
+    background-color: #eeeeee;
+}
+.receberOfertas div{
+    margin: 0 auto; 
+    padding-top: 2%;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.receberOfertas img{
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: #ffffff;
+}
+.receberOfertas img:hover {
+    box-shadow:         0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+}
+.receberOfertas h2{
+    text-align: center;
+    padding-top: 5%;
+}
+
+/* sessão vantagens decolar */
+
+.infos-uteis{
+    width: 100%;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-evenly;
+}
+.infos-uteis div{
+    width: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #c6c4c4;
+    border-radius: 10px;
+}
+.infos-uteis div:hover{
+    box-shadow:         0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 11px 0px rgba(50, 50, 50, 0.75);
+}
+.infos-uteis p{
+    padding-top: 20px;
+    line-height: 25px;
+    color: #808080;
+}
+
+/* sessão inscreva-se para receber ofertar */
+
+.inscreva-se{
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+.inscreva-se input[type=email]{
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #c6c4c4;
+    padding: 10px;
+}
+.inscreva-se input[type=submit]{
+    width: 26%;
+    height: 40px;
+    font-size: medium;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #412480;
+    border-radius: 30px;
+    margin-top: 3%;
+    margin-left: 40px;
+}
+.inscreva-se input[type=submit]:hover{
+    background-color: #270570;
+}
+
+
+
+
 
 

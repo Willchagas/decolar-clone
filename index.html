@@ -5,21 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css"/>
     <script src="https://kit.fontawesome.com/35178af9c4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <header class="userMenu">
         <div id="logo"><img src="img/logo.png" width="148px"></div>
-                <ul>
+                <ul id="desktop">
                     <li><i class="fa-solid fa-passport"></i><p>Passaporte</p></li>
                     <li><i class="fa-solid fa-user"></i><p>Iniciar Sessão</p></li>
                     <li><i class="fa-solid fa-plane-departure"></i><p>Minhas Viagens</p></li>
                     <li><i class="fa-solid fa-circle-info"></i><p>Ajuda</p></li>
                 </ul>
+                <nav class="mobile right">
+                    <div class="botao-menu-mobile">
+                    <i class="fas fa-bars"></i>
+                    </div><!--botao-menu-mobile-->
+                    <ul>
+                        <li><a href="">Passaporte</a></li>
+                        <li><a href="">Iniciar Sessão</a></li>
+                        <li><a href="">Minhas Viagens</a></li>
+                        <li><a href="">Ajuda</a></li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
     </header>
     <header class="navigation">
     <nav>
@@ -42,7 +56,7 @@
                         <span></span>
                     </label>
                     <label class="check">
-                        <input type="checkbox">Ida</input>
+                        <input type="checkbox" id="ida" value="ativo">Ida</input>
                         <span></span>
                     </label>
             </div>
@@ -66,10 +80,10 @@
                     </select>
                 </div>
                 <div>
-                    <h5>Escolha a data de ida</h5>
-                    <input type="date">
-                    <h5>Escolha a data de volta</h5>
-                    <input type="date">
+                    <h5 class="ida">Escolha a data de ida</h5>
+                    <input type="date" class="ida">
+                    <h5 class="volta">Escolha a data de volta</h5>
+                    <input type="date" class="volta">
                 </div>
                 <div>
                     <h5>Passageiros e classe</h5>
@@ -106,16 +120,16 @@
         </div>
     </div>
     <section class="ofertas">
-        <div class="banner-de-ofertas">
-            <img src="img/bannerleft.png" height="250px">
+        <div class="banner-de-ofertas">           
             <img src="img/bannercenter.png" height="250px">
             <img src="img/bannerRight.png" height="250px">
+            <img src="img/bannerleft.png" height="250px">
         </div>
     </section>
 
     <section class="copa-do-mundo">
         <div class="box">
-            <img src="img/promoCopa.png" width="400px">
+            <img src="img/promoCopa.png" width="200px">
 
             <div class="info">
               <h1>Com o Cartão Decolar Santander Visa <br>
@@ -184,7 +198,7 @@
 
     <footer>
         <div class="inscreva-se">
-            <div style="width: 20%;">
+            <div id="ins" style="width: 20%;">
                 <img src="img/envelope.png" alt="">
             </div>
             <div style="width: 30%;">
@@ -200,7 +214,6 @@
         </div>
         <div style="text-align: center; width: 100%; height: 90px; background-color: #eeeeee; padding: 30px;"><h4>Feito com ❤ por Willian P. Chagas</h4></div>
     </footer>   
-
     <script src="js/script.js"></script>
 </body>
 </html>

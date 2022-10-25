@@ -1,3 +1,24 @@
+// menu mobile
+
+$(function(){ 
+    $('nav.mobile').click(function(){
+        var listaMenu = $('nav.mobile ul');
+        if(listaMenu.is(':hidden') == true){
+            var icone = $('.botao-menu-mobile').find('i');
+            icone.removeClass('fas fa-bars');
+            icone.addClass('far fa-times-circle');
+            listaMenu.slideToggle();
+        }else{
+         var icone = $('.botao-menu-mobile').find('i');
+            icone.removeClass('far fa-times-circle');
+            icone.addClass('fas fa-bars');
+            listaMenu.slideToggle(); 
+        }
+    }) 
+ })
+
+// slide
+
 var proximaImagem = 1;//guarda a posição da imagem que deve entrar na tela, no caso é a imagem da posição 1, pois a imagem 0 já está visível na tela
 var zIndexAtual = 0;//usado para criar um aumento progressivo no z-index
 var imagens = document.getElementById("container").children;//pega todos os nodos filhos da div #container, ou seja, nossa coleção de imagens
@@ -38,3 +59,4 @@ function resetarImagens(){
 }
 
 var intervalo = setInterval(avancarImagem,3000);
+

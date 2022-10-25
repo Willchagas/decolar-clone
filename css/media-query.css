@@ -1,0 +1,137 @@
+@media (max-width: 1000px){
+    #desktop{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    
+    nav.mobile{
+        display: block;
+    }
+
+    .botao-menu-mobile{
+        font-size: 30px;
+        margin-top: 2px;
+        cursor: pointer;
+        color: black;
+    }
+
+    nav.mobile ul{
+        top: 80px;
+        z-index: 3;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+
+    nav.mobile li{
+        font-weight: 300;
+        width: 100%;
+        display: block;
+        background: white;
+        border-bottom: 1px solid #ccc;
+        font-size: 17px;
+        padding: 8px 0;
+    }
+
+    nav.mobile li a{
+        display: block;
+        color: #444;
+        text-decoration: none;
+    }
+
+    .info-passagem{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .slide{
+        display: none;
+    }
+
+    .copa-do-mundo{
+        text-align: center;
+    }
+    .box{
+        height: 650px;
+    }
+    .benefits p{
+        height: 200px;
+    }
+    .copa-do-mundo img{
+        display: none;
+    }
+    
+    .infos-uteis{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .infos-uteis div{
+        width: 90%;
+        text-align: center;
+    }
+
+    .inscreva-se{
+        width: 100%;
+        margin-bottom: 50px 
+    }
+    .inscreva-se input[type=email]{
+        width: 250px;
+        height: 55px;
+        border-radius: 5px;
+        border: 1px solid;
+        border-color: #c6c4c4;
+        padding: 10px;
+    }
+    .inscreva-se input[type=submit]{
+        width:60%;
+        height: 40px;
+        font-size: medium;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #412480;
+        border-radius: 30px;
+        margin-top: 3%;
+        margin-left: 40px;   
+    }
+    #ins{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .navigation ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .navigation ul li{
+        width: 30%;
+        padding: 10px;
+    }
+    .banner-de-ofertas img{
+        display: flex;
+        margin: 0 auto;
+        height: auto;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .copa-do-mundo{
+        height: auto;
+    }
+    .box{
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .benefits p{
+        height: auto;
+    }
+}
+
